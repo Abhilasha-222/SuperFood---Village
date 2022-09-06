@@ -1,0 +1,292 @@
+/* for smaller desktops
+Below 1350px */
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .primary_heading {
+    font-size: 4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* for landscape tablets
+Below 1200px */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4rem;
+    row-gap: 4rem;
+  }
+
+  .secondary_heading {
+    font-size: 2.8rem;
+  }
+
+  .tertiary_heading {
+    font-size: 1.8rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main_nav_list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4rem;
+  }
+
+  .testimonial_container {
+    padding: 6.4rem;
+  }
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta_form {
+    grid-template-columns: 1fr;
+    column-gap: 2.8rem;
+    row-gap: 1.8rem;
+  }
+
+  .cta_text {
+    margin-bottom: 3rem;
+  }
+
+  .btn_form {
+    margin-top: 2.8rem;
+  }
+}
+
+/* for tablets
+Below 944px */
+
+@media (max-width: 59rem) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero_text_box,
+  .hero_img_box {
+    text-align: center;
+  }
+
+  .hero_img {
+    width: 60%;
+  }
+
+  .delivered_meals {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .logos img {
+    height: 1.8rem;
+  }
+
+  .step_number {
+    font-size: 6.4rem;
+  }
+
+  .meal_content {
+    padding: 1rem 3rem 3rem 3rem;
+  }
+
+  .section_testimonial {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav_button {
+    display: block;
+  }
+
+  .nav_style .main_nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav_style .icon_nav_button[name="close-outline"] {
+    display: block;
+  }
+  .nav_style .icon_nav_button[name="menu-outline"] {
+    display: none;
+  }
+
+  .main_nav {
+    background-color: #d5e7f8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* hide nav bar without 
+    using display:none; property */
+
+    /* 1. use opavity as 0 */
+    opacity: 0;
+
+    /* 2. make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3. hide it from screen reader */
+    visibility: hidden;
+  }
+
+  .main_nav_list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main_link:link,
+  .main_link:visited {
+    font-size: 2.4rem;
+  }
+}
+
+/* for smaller tablets
+Below 704px */
+
+@media (max-width: 44rem) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .secondary_heading {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing_plan {
+    width: 100%;
+  }
+
+  .grid_footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .diet {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .logo_footer,
+  .address_col {
+    grid-column: span 3;
+  }
+
+  .nav_col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 2.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  html {
+    font-size: 40.5%;
+  }
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1rem 1.4rem;
+  }
+
+  .section_hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero_img {
+    width: 70%;
+  }
+
+  .logos img {
+    height: 2.5rem;
+  }
+
+  .step_img_box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step_img_box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step_img_box {
+    transform: translateY(2.4rem);
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta_text_box {
+    padding: 3.2rem;
+  }
+
+  .cta_img_box {
+    height: 32rem;
+    grid-row: 1;
+  }
+}

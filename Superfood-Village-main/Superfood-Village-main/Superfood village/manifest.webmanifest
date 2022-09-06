@@ -1,0 +1,10 @@
+{
+  "icons": [
+    {
+      "src": "images/favicon/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    { "src": "images/favicon/android-chrome-512x512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}
